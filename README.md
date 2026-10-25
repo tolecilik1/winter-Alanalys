@@ -1,5 +1,57 @@
 # Artificial Intelligence Development — Engineering Intelligent Systems for the Next Digital Frontier
 # winter-Alanalys -Comunication 
+## 🏗️ System Architecture
+
+NexoraAI is designed as a modular AI architecture that integrates user interfaces, request orchestration, AI inference, external tools, and computational infrastructure.
+
+```mermaid
+flowchart TD
+    A["👤 User / Developer"] --> B["🌐 Interface Layer"]
+    B --> C["🔐 API Gateway & Security"]
+    C --> D["🧠 NexoraAI Core"]
+
+    D --> E["⚙️ AI Inference Engine"]
+    D --> F["🔧 Tool Orchestrator"]
+    D --> G["📚 Knowledge Retrieval"]
+    D --> H["📊 Monitoring & Logging"]
+
+    E --> I["🤖 AI Models"]
+    F --> J["🐍 Python / Automation Tools"]
+    G --> K[("🗄️ Data Storage")]
+
+    I --> L["💻 CPU / GPU Compute"]
+    J --> L
+    K --> D
+    H -.-> D
+
+    L --> M["☁️ Local / Cloud Infrastructure"]
+```
+
+### Architecture Components
+
+| Component | Responsibility |
+|---|---|
+| Interface Layer | Provides access through a web interface, CLI, or API client. |
+| API Gateway & Security | Handles request validation, authentication, and access control. |
+| NexoraAI Core | Coordinates application logic and AI processing workflows. |
+| AI Inference Engine | Executes inference using supported AI models. |
+| Tool Orchestrator | Coordinates approved Python tools and automation tasks. |
+| Knowledge Retrieval | Retrieves relevant information from configured data sources. |
+| Data Storage | Stores application data and other supported information. |
+| Monitoring & Logging | Records application events, errors, and performance metrics. |
+| Compute Infrastructure | Provides CPU, GPU, and local or cloud execution resources. |
+
+### Request Processing Flow
+
+1. A user submits a request through a supported interface.
+2. The API layer validates the request and enforces access controls.
+3. NexoraAI Core determines the appropriate processing workflow.
+4. The inference engine and supporting tools process the request.
+5. Relevant information is retrieved when required.
+6. The application returns the generated result to the user.
+7. Monitoring components record relevant events and operational metrics.
+
+> **Note:** This diagram represents a proposed architecture. Actual components and capabilities depend on the implementation, configuration, and infrastructure deployed.
 ## Abstract
 
 This project explores the engineering, integration, and continuous refinement of Artificial Intelligence (AI) systems designed to expand computational capabilities, streamline complex workflows, and facilitate more sophisticated human–machine interaction.
